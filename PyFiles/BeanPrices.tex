@@ -1,0 +1,142 @@
+\documentclass[14pt,a4paper,landspace,landscape]{extarticle}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{pdfpages}
+\usepackage{array,hyperref , pifont, amsmath, amsthm, amssymb, tikz, enumerate,natbib}
+\usepackage[CJKspace = true]{xeCJK}
+\usepackage{tabularx}
+\usepackage{bibentry} %try to show the full cieation
+\nobibliography*
+%\bibliographystyle{abbrv}
+%\nobibliography*
+
+
+
+
+\usepackage[margin=1.0cm]{geometry}
+\renewcommand{\baselinestretch}{1.4} 
+\setcounter{tocdepth}{3}
+
+\setCJKmainfont{標楷體} 
+\begin{document}
+\title{}
+\author{}
+\date{}
+%\vspace*{-1cm}
+\maketitle 
+\thispagestyle{empty} 
+\vspace*{-9em}
+%\footnotesize 88折
+
+
+
+
+%\begin{tabular}{ |c|c|c|c|}\hline
+% \large \today & { \Large  王瑟徽} & \multicolumn{2}{c|}{\large \$ \Large 1495} \\\hline
+%  品項&單價&數量&價格\\\hline
+%耶加雪啡 孔加處理廠 &   & 1/2 Lb & 350\\ \hline
+%衣索比亞 西達摩 桃可可 &   & 1/2 Lb & 360\\ \hline
+%耶加雪啡 科契爾 潔蒂普  &   & 1/2 Lb & 320\\ \hline
+%哥斯大黎加 蒙塔那 聖母莊園 &   & 1/2 Lb & 400\\ \hline
+%\multicolumn{3}{|c|}{運費} & 65\\\hline\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+%\end{tabular}
+%\bigskip\bigskip\bigskip
+%
+%
+%
+%
+%
+%\begin{tabular}{ |c|c|c|c|}\hline
+% \large \today & { \Large  柯董} & \multicolumn{2}{c|}{\large \$ \Large 2700} \\\hline
+%  品項&單價&數量&價格\\\hline
+%厄瓜多 卡爾奇省 角雕莊園 &   & 1/4 Lb & 180\\ \hline
+%耶加雪啡 沃卡 小農孟格夏 &   & 1/4 Lb & 200\\ \hline
+%肯亞  麒麟雅加 奇恩雅 &   & 1/4 Lb & 225\\ \hline
+%耶加雪啡 沃卡 巫里 WBC競賽批次(日) &   & 1/2 Lb & 440\\ \hline
+%耶加雪啡 沃卡 巫里 WBC競賽批次(水) &   & 1/2 Lb & 420\\ \hline
+%哥斯大黎加 蒙塔那 聖母莊園 &   & 1/2 Lb & 400\\ \hline
+%肯亞  麒麟雅加 奇恩雅 &   & 1/4 Lb & 225\\ \hline
+%尼加拉瓜  檸檬樹莊園 黃帕卡馬拉 &   & 1/2 Lb & 550\\ \hline
+%\multicolumn{3}{|c|}{運費} & 60\\\hline\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+%\end{tabular}
+%\begin{tabular}{ |c|c|c|c|}\hline
+% \large \today & { \Large  李奇穎} & \multicolumn{2}{c|}{\large \$ \Large 625} \\\hline
+%  品項&單價&數量&價格\\\hline
+%哥斯大黎加 蒙塔那 聖母莊園 &   & 1/4 Lb & 205\\ \hline
+%衣索比亞 西達摩 桃可可 &   & 1/4 Lb & 185\\ \hline
+%耶加雪啡 科契爾  潔瑪 &   & 1/4 Lb & 175\\ \hline
+%\multicolumn{3}{|c|}{運費} & 60\\\hline\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+%\end{tabular}
+%\bigskip\bigskip\bigskip
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%\begin{tabular}{ |c|c|c|c|}\hline
+% \large \today & { \Large  政勳大大} & \multicolumn{2}{c|}{\large \$ \Large 659} \\\hline
+%  品項&單價&數量&價格\\\hline
+%衣索比亞  海爾賽拉希 凱貝朵 &  320 & 1/2 Lb & 282\\ \hline
+%衣索比亞 古吉 塔莎亞 紫風鈴 &  360 & 1/2 Lb & 317\\ \hline
+%\multicolumn{3}{|c|}{運費} & 60\\\hline\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+%\end{tabular}
+%\bigskip\bigskip\bigskip
+%
+
+
+
+
+\begin{tabular}{ |c|c|c|c|}\hline
+ \large \today & { \Large  姨} & \multicolumn{2}{c|}{\large \$ \Large 710} \\\hline
+  品項&單價&數量&價格\\\hline
+厄瓜多 卡爾奇省 角雕莊園 & 180 & 1/4 Lb & 145\\ \hline
+耶加雪啡 沃卡 小農孟格夏 & 200 & 1/4 Lb & 155\\ \hline
+衣索比亞  海爾賽拉希 凱貝朵 & 160 & 1/4 Lb & 125\\ \hline
+哥斯大黎加 蒙塔那 聖母莊園 & 70 & 1/12 Lb & 55\\ \hline
+尼加拉瓜  奇蹟莊園 爪哇尼卡 & 70 & 1/12 Lb & 55\\ \hline
+秘魯 亞馬遜 聖尼可拉斯農協 & 65 & 1/12 Lb & 45\\ \hline
+巴西 喜拉朵 依薩 & 155 & 1/4 Lb & 100\\ \hline
+\multicolumn{3}{|c|}{前次餘額} & 1455\\\hline \multicolumn{3}{|c|}{運費} & 65\\\hline\hline
+\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+\end{tabular}
+\bigskip\bigskip\bigskip
+
+
+
+
+
+\begin{tabular}{ |c|c|c|c|}\hline
+ \large \today & { \Large  張董代購} & \multicolumn{2}{c|}{\large \$ \Large 2050} \\\hline
+  品項&單價&數量&價格\\\hline
+巴拿馬 瑪瑪卡特莊園 藝伎58J &   & 1/2 Lb & 700\\ \hline
+巴拿馬 瑪瑪卡特莊園 藝伎58J &   & 1/2 Lb & 700\\ \hline
+哥斯大黎加 三奇蹟莊園 藝伎 &   & 1/2 Lb & 650\\ \hline
+%\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+\end{tabular}
+\bigskip\bigskip\bigskip
+
+
+
+
+
+\begin{tabular}{ |c|c|c|c|}\hline
+ \large \today & { \Large  李奇穎} & \multicolumn{2}{c|}{\large \$ \Large 545} \\\hline
+  品項&單價&數量&價格\\\hline
+巴拿馬  蕾莉達莊園 帕卡馬拉 &   & 1/4 Lb & 205\\ \hline
+尼加拉瓜  檸檬樹莊園 黃帕卡馬拉 &   & 1/4 Lb & 280\\ \hline
+\multicolumn{3}{|c|}{運費} & 60\\\hline\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+\end{tabular}
+\bigskip\bigskip\bigskip
+
+
+
+
+
+
+
+
+
+\end{document}
