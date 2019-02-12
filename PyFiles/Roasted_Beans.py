@@ -45,7 +45,7 @@ with open('../CoffeeBeans.csv', 'r',encoding="utf-8") as csvfile:
         #print ', '.join(row)
         count = count +1
         
-        if count > row_count -40:
+        if count > row_count -42:
             if row[7] == '衣索比亞 耶加雪啡':
                 row[7] = '耶加雪啡'
                 row[8] = 'Yirgacheffe'
