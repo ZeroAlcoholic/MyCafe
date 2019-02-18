@@ -1,0 +1,47 @@
+\documentclass[14pt,a4paper,landspace,landscape]{extarticle}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{pdfpages}
+\usepackage{array,hyperref , pifont, amsmath, amsthm, amssymb, tikz, enumerate,natbib}
+\usepackage[CJKspace = true]{xeCJK}
+\usepackage{tabularx}
+\usepackage{advdate}
+%\bibliographystyle{abbrv}
+%\nobibliography*
+
+
+
+
+\usepackage[margin=1.0cm]{geometry}
+\renewcommand{\baselinestretch}{1.4} 
+\setcounter{tocdepth}{3}
+
+\setCJKmainfont{標楷體} 
+\begin{document}
+\title{}
+\author{}
+\date{}
+%\vspace*{-1cm}
+\maketitle 
+\thispagestyle{empty} 
+\vspace*{-9em}
+%\footnotesize 88折
+
+
+%%BillsContents%%
+\qquad
+\begin{tabular}{ |c|c|c|c|}\hline
+\AdvanceDate[
+-1
+]\today  & { ads} & \multicolumn{2}{c|}{總額 -503} \\\hline
+  品項&單價&數量&價格\\\hline
+7
+耶加雪啡 沃卡小農  奇波蝶 & 800 & 1/6磅 & 123\\\hline
+牙買加 藍山 克里夫頓莊園 No.1 & 78 & 3 & 205\\\hline
+瓜地馬拉 拉米尼塔 花神 & 327 & 375g & 122\\\hline
+%%OneBill%%
+\multicolumn{3}{|c|}{運費} + & 60\\\hline
+\hline\hline\multicolumn{4}{|c|}{\large 匯款帳號: 國泰世華(013) 216506 115941}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號: 郵局(700) 0021009 1601758}\\\hline\multicolumn{4}{|c|}{\large 匯款帳號:台新銀行(812) 2888100 1329963}\\\hline
+\end{tabular}
+
+
+\end{document}

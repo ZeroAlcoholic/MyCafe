@@ -1,0 +1,122 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{pdfpages}
+\usepackage{array,hyperref , pifont, amsmath, amsthm, amssymb, tikz, enumerate,natbib}
+\usepackage[CJKspace = true]{xeCJK}
+\usepackage{tabularx}
+\usepackage{bibentry} %try to show the full cieation
+%\usepackage{datetime}
+%\usdate
+%\bibliographystyle{abbrv}
+%\nobibliography*
+%----------------orig79---77---------------0.27cm---orig0.33-----------
+\usepackage[left=-0.645cm, right=1.07cm, top=3.43cm, bottom=0.45cm]{geometry}
+%\usepackage[left=-0.78cm, right=0.04cm, top=1.38cm, bottom=1.3cm]{geometry}
+\renewcommand{\baselinestretch}{1.1} 
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+%\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\baselinestretch}{1.22}
+\usepackage{datenumber}
+\setdatetoday
+\usepackage{frcursive}
+\usepackage[T1]{fontenc}
+\usepackage{nopageno}%\usepackage[orig, british, cleanlook]{isodate}
+\setCJKmainfont{標楷體} %\XeTeXlinebreaklocale "zh" 
+\renewcommand{\today}{\ifnum\number\day<10 0\fi \number\day \space%
+\ifcase \month \or  Jan\or Feb\or Mar\or Apr\or May\or Jun\or
+   Jul\or Aug\or Sep\or Oct\or Nov\or Dec\fi,%
+\number \year} 
+\usepackage{advdate}
+\begin{document} 
+\setdatetoday %
+
+\pagestyle{empty}
+\newcolumntype{C}[1]{%
+%-----------2.98cm---3cm-for-big-------原始2.63cm-----------
+ >{\vbox to 2.88cm\bgroup\vfill\centering}%
+ p{#1}%
+ <{\egroup}}  
+%                    0.345em
+%--------------------0.93em-----------
+
+\begin{tabular}{C{0.31\textwidth} C{0.36\textwidth} C{0.28\textwidth}}
+\shortstack[c]{
+%%11%%
+}& \shortstack[c]{
+%%12%%
+}& \shortstack[c]{
+%%13%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%21%%
+}& \shortstack[c]{
+%%22%%
+}& \shortstack[c]{
+%%23%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%31%%
+}& \shortstack[c]{
+%%32%%
+}& \shortstack[c]{
+%%33%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%41%%
+}& \shortstack[c]{
+%%42%%
+}& \shortstack[c]{
+%%43%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%51%%
+}& \shortstack[c]{
+%%52%%
+}& \shortstack[c]{
+%%53%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%61%%
+}& \shortstack[c]{
+%%62%%
+}& \shortstack[c]{
+%%63%%
+}\vspace*{-0.1em}\tabularnewline
+\shortstack[c]{
+%%71%%
+}& \shortstack[c]{
+%%72%%
+}& \shortstack[c]{
+%%73%%
+}\vspace*{-0.1em}\tabularnewline
+\end{tabular}
+\end{document}
+
+%\hspace*{-0.25em} { \vspace*{0.25cm} 
+%當季特選  \small 低溫烘焙 %3%
+% %4%
+%}\\
+%{ 
+%\LARGE \hspace*{0.50em} \vspace*{-1.4cm}  
+%\hspace*{0.3em}\color{Sepia} 蘋果果乾%5%
+%}\vspace*{-0.05em}\\
+%{\hspace*{-12em}\includegraphics[trim=0 6em 0 -6em,width=0.068\textwidth]{NewC.png}}\vspace*{-4.0em}\\
+%\hspace*{13em}
+%\includegraphics[trim=0 -3.3em 0 0,width=0.065\textwidth]{NewQR.png}  
+%\vspace*{-0.55em}\\
+%\setdatetoday \addtocounter{datenumber}{
+%0%date%
+%}\setdatebynumber{\thedatenumber}
+%{\scriptsize 烘焙日：{\scriptsize\datedate}\hspace{0.3em}% 
+%烘焙者: \textbf{\textcursive{Chiao-Ching}}}\vspace*{-0.05em}\\
+% \addtocounter{datenumber}{
+% %Feed
+%0 }%
+%\setdatebynumber{\thedatenumber} 
+%{\small
+% 無添加%Raost%
+%\enskip \scriptsize 建議賞味:} \scriptsize{\datemonthname ~\thedateday}$\thicksim$\addtocounter{datenumber}{45}\setdatebynumber{\thedatenumber} \datedate
+%
+%
+%
+%
