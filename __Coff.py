@@ -52,6 +52,7 @@ class App(QWidget):
     Pots, FullCoffeeList, CoffeeList,Bills = [], [], [],[]
     daysto = -1
     disc = False
+    Amount_Count = 0
 
     with open(CoffeeBeans, 'r',encoding="utf-8") as csvfile:
         Listing = csv.reader(csvfile, delimiter=',', quotechar='|')
@@ -212,6 +213,12 @@ class App(QWidget):
         self.default_date.setCalendarPopup(True)
         self.hbox_bean.addWidget(self.default_date)
         
+        
+        self.PotsAmount = QLabel('', self)
+        self.PotsAmount.setStyleSheet("QLabel { color : blue; }")
+        self.PotsAmount.setFixedWidth(60)
+        self.hbox_bean.addWidget(self.PotsAmount)
+        
         self.to_tex = QPushButton('CloseToTex',self)
         self.to_tex.clicked.connect(self.Pots2Tex)
         self.hbox_bean.addWidget(self.to_tex)
@@ -225,6 +232,8 @@ class App(QWidget):
         for ix in range(12):
             self.Pots.append(self.createPot())    
             self.grid_beans.addWidget(self.Pots[ix],int(ix/4),int(ix%4))
+
+
 
         self.tab_beans.layout = QVBoxLayout(self)
         #self.grid_beans.setFixedWidth(500)
@@ -259,9 +268,14 @@ class App(QWidget):
         self.show()
         
         
-        def closeEvent(self, event):
-            self.Pots2Tex()
-            self.Bills2Tex()
+    def closeEvent(self, event):
+        self.Pots2Tex()
+        self.Bills2Tex()
+
+    def amountchange(self,):
+        self.PotsAmount.setText('{:5d}'.format(int(self.getAmount())))
+        #print(self.getAmount())
+
 
 
 
@@ -451,6 +465,7 @@ def createPot(self):
     Ramount.setWrapping(True)
     Ramount.setValue(0)
     Ramount.valueChanged.connect(valuechange)
+    Ramount.valueChanged.connect(self.amountchange)
     Ramount.setObjectName('Ramount')
 
     vbox_1 = QVBoxLayout()
@@ -491,6 +506,9 @@ def Close(self,):
     QApplication.quit()
 
 setattr(App, "Close", Close)
+
+
+
 
 
 def getAmount(self,):
@@ -817,7 +835,7 @@ app.exec_()
 # %%
 
 
-
 # %%
+
 
 
